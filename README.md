@@ -35,8 +35,11 @@ https://developers.google.com/maps/documentation/android-sdk/get-api-key
 自身で生成したAPIキーを挿入する必要があります:
 `Android/app/src/main/res/values/google_maps_api.xml`
 
+
 わかりやすい動画もありますので参考としてください。
+
 Raffaello KWOS氏: EASA REMOTE ID, come funziona e come riceverlo: OpenDroneID Android receiver application. (イタリア語)
+
 https://www.youtube.com/watch?v=OKslqHbcQuU
 
 
