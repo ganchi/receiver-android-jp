@@ -1,20 +1,17 @@
 # OpenDroneID Android 受信アプリケーション
 
-このプロジェクトは、OpenDroneID Bluetooth、WiFi NAN (Neighbor Aware Network)、WiFi BeaconシグナルのAndroidスマートフォン向け受信アプリケーション実装例のソースコードを提供します。
-このアプリケーションは、リモートID規格となる【ASTM F3411】Bluetooth、WiFi NAN、WiFi Beaconパーツと、DirectリモートID規格【ASD-STAN】prEN 4709-002 に準拠しています。
+このプロジェクトは、OpenDroneID Bluetooth、WiFi NAN (Neighbor Aware Network)、WiFi BeaconシグナルのAndroidスマートフォン向け受信アプリケーション実装例のソースコードを提供します。このアプリケーションは、リモートID規格となる【ASTM F3411】Bluetooth、WiFi NAN、WiFi Beaconパーツと、DirectリモートID規格【ASD-STAN】prEN 4709-002 に準拠しています。
 
 OpenDroneIDに関するより詳細な情報は、opendroneid-core-cプロジェクトをご覧ください:  
 https://github.com/opendroneid/opendroneid-core-c  
 
-このアプリケーションは、Bluetoothアドバタイズ(告知通信) / WiFi NANシグナルおよびビーコンを継続的にスキャンします。
-OpenDroneIDシグナル仕様に合致するものがあれば、その送信機をリストへ追加し、マップ上にドローンの位置を表示、OpenDroneIDデータの詳細内容を表示させることができます。
+このアプリケーションは、Bluetoothアドバタイズ(告知通信) / WiFi NANシグナルおよびビーコンを継続的にスキャンします。OpenDroneIDシグナル仕様に合致するものがあれば、その送信機をリストへ追加し、マップ上にドローンの位置を表示、OpenDroneIDデータの詳細内容を表示させることができます。
 
 
 ![](Screenshot.jpg)
 
-地図上の赤マーカーは、ドローンの位置を示します。
-青マーカーは、オペレーター / 離陸地点の位置を示します。(そのデータフィールドを受信している場合)
-またドローンが飛行した場所を示す赤い線がマップ上に表示されます。
+地図上の赤マーカーは、ドローンの位置を示します。青マーカーは、オペレーター / 離陸地点の位置を示します。(そのデータフィールドを受信している場合) またドローンが飛行した場所を示す赤い線がマップ上に表示されます。
+
 
 注意: この受信アプリケーションのユーザは、受信したOpenDroneIDシグナルが、信号を示している位置で空中を飛行しているドローン実機と同一であることを常に目視で確認する必要があります。
 
