@@ -3,7 +3,8 @@
 このプロジェクトは、OpenDroneID Bluetooth、WiFi NAN (Neighbor Aware Network)、WiFi BeaconシグナルのAndroidスマートフォン向け受信アプリケーション実装例のソースコードを提供します。
 このアプリケーションは、リモートID規格となる【ASTM F3411】Bluetooth、WiFi NAN、WiFi Beaconパーツと、DirectリモートID規格【ASD-STAN】prEN 4709-002 に準拠しています。
 
-OpenDroneIDに関するより詳細な情報は、opendroneid-core-cプロジェクトをご覧ください: https://github.com/opendroneid/opendroneid-core-c
+OpenDroneIDに関するより詳細な情報は、opendroneid-core-cプロジェクトをご覧ください:  
+https://github.com/opendroneid/opendroneid-core-c  
 
 このアプリケーションは、Bluetoothアドバタイズ(告知通信) / WiFi NANシグナルおよびビーコンを継続的にスキャンします。
 OpenDroneIDシグナル仕様に合致するものがあれば、その送信機をリストへ追加し、マップ上にドローンの位置を表示、OpenDroneIDデータの詳細内容を表示させることができます。
