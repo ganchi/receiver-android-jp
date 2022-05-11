@@ -1,51 +1,60 @@
-# OpenDroneID Android receiver application
+# OpenDroneID Android 受信アプリケーション
 
-This project provides the source codes for an example receiver implementation for OpenDroneID Bluetooth, WiFi NAN (Neighbor Aware Network) and WiFi Beacon signals for Android phones.
-The application is compliant with the Bluetooth, WiFi NAN and WiFi Beacon parts of the ASTM F3411 Remote ID standard and the ASD-STAN prEN 4709-002 Direct Remote ID standard.
+このプロジェクトは、OpenDroneID Bluetooth、WiFi NAN (Neighbor Aware Network)、WiFi BeaconシグナルのAndroidスマートフォン向け受信アプリケーション実装例のソースコードを提供します。
+このアプリケーションは、リモートID規格となる【ASTM F3411】Bluetooth、WiFi NAN、WiFi Beaconパーツと、DirectリモートID規格【ASD-STAN】prEN 4709-002 に準拠しています。
 
-For more in-depth information about Open Drone ID, please see the opendroneid-core-c project: https://github.com/opendroneid/opendroneid-core-c
+OpenDroneIDに関するより詳細な情報は、opendroneid-core-cプロジェクトをご覧ください: https://github.com/opendroneid/opendroneid-core-c
 
-The application continuously scans for Bluetooth advertising/WiFi NAN signals/beacons.
-If any is found matching the specifiers for OpenDroneID signals, it adds that transmitter to a list, will display the location of the drone on a map and can show the detailed content of the OpenDroneID data.
+このアプリケーションは、Bluetoothアドバタイズ(告知通信) / WiFi NANシグナルおよびビーコンを継続的にスキャンします。
+OpenDroneIDシグナル仕様に合致するものがあれば、その送信機をリストへ追加し、マップ上にドローンの位置を表示、OpenDroneIDデータの詳細内容を表示させることができます。
+
 
 ![](Screenshot.jpg)
 
-The red marker on the map shows the location of the drone.
-The blue marker the location of the operator/take-off point (if that data field is being received).
-A red line will be drawn to show where the drone has been flying.
+地図上の赤マーカーは、ドローンの位置を示します。
+青マーカーは、オペレーター / 離陸地点の位置を示します。(そのデータフィールドを受信している場合)
+またドローンが飛行した場所を示す赤い線がマップ上に表示されます。
 
-Please note: The user of this receiver application must always visually verify that the received Open Drone ID signal corresponds to an actual drone seen flying in the air, at the position the signal claims it to be.
+注意: この受信アプリケーションのユーザは、受信したOpenDroneIDシグナルが、信号を示している位置で空中を飛行しているドローン実機と同一であることを常に目視で確認する必要があります。
 
-## How to build
 
-To build the application, use Android Studio.
-Import the project (File -> New -> Import Project) and point to the folder named Android.
-Then Build -> Make Project.
+## ビルド方法
 
-For full functionality, before building the source, you need to obtain a Google Maps API key.
-Without the key, the application can be started and will pick up transmitted signals and will show those in the list and detailed info views, but the map view will not work.
-The sources are on purpose not delivered with a Google Maps key and for the same reason, ready built apk files are not provided.
-Please generate your own key as detailed here:
+アプリケーションをビルドするには、Android Studioを使用します。
+プロジェクトをインポートして (File -> New -> Import Project)、【Android】フォルダを指定します。
+次に、Build -> Make Projectを実行します。
+※まっく氏は上記の説明ではうまくいかず、ビルド -> Build Bundle(s)/APK(s) -> Build APK(s)を実行、【...\Android\app\build\intermediates\apk\debug\app-debug.apk】を出力させ、これをスマートフォンに移動しインストールを実施しました。
+
+完全な機能を実現するため、ソースコードをビルドする前に、Google Maps APIキーを取得する必要があります。
+APIキーがない場合は、アプリケーション起動、送信された信号を取得、リストと詳細情報がビュー表示されますが、地図上に表示されるビューは動作しませんのでご注意ください。
+ソースコードでは意図的にGoogle Maps APIキーは同梱提供されておらず、同一の理由で、すぐにビルド/利用可能なapkファイルも提供されてません。
+こちらで説明している独自のAPIキーを生成してご利用ください。
 https://developers.google.com/maps/documentation/android-sdk/get-api-key
 
-Your own generated key must be inserted in:
+自身で生成したAPIキーを挿入する必要があります:
 `Android/app/src/main/res/values/google_maps_api.xml`
 
-## Transmitter Devices
+わかりやすい動画もありますので参考としてください。
+Raffaello KWOS氏: EASA REMOTE ID, come funziona e come riceverlo: OpenDroneID Android receiver application. (イタリア語)
+https://www.youtube.com/watch?v=OKslqHbcQuU
 
-If you are looking for something to test the Receiver Application against, a list of Remote ID transmitter devices is available [here](transmitter-devices.md).
 
-## Transmission method support on different Android smartphones
+## 送信デバイス
 
-An extensive list of the support in different phone models is [available here](supported-smartphones.md).
+受信アプリケーションのテスト用として、リモートIDの送信デバイスの公開されているリスト一覧は [こちら](transmitter-devices.md) を参照ください。
 
-The transmission methods supported on a specific device (as per the Android feature flags) are listed in the settings menu of the application.
-However, reception can still fail for various reasons.
-See further details below and in the description of the [device list](supported-smartphones.md).
+## 異なるAndroidスマートフォンでの伝送方式のサポート
+
+機種毎の対応一覧は [こちら](supported-smartphones.md) を参照ください。
+
+(Android側の機能における)特定端末でサポートされる送信方法は、アプリケーションの【設定メニュー】に記載されます。
+但し、様々な理由で受信に失敗することがあります。
+詳細は下記および [デバイスリスト](supported-smartphones.md) の説明をご覧ください。
+
 
 ### Bluetooth
 
-The Bluetooth reception of the application has been tested to work on several devices:
+アプリケーションにおけるBluetooth受信は、複数のデバイスにて動作確認済みとなります:
 - Huawei Y6 Pro (Android 5.1)
 - HTC one M9 (Android 5.1, 6.0, 7.0)
 - OnePlus 6T (Android 9, 10 and 11)
@@ -55,49 +64,52 @@ The Bluetooth reception of the application has been tested to work on several de
 - Motorola One Vision (Android 9)
 - Xiaomi Mi 9 (Android 9)
 
-The app will read the Android feature flags to determine whether the phone model supports receiving only Legacy Bluetooth advertising signals (BT4) or whether it also supports receiving Long Range + Extended Advertising signals (optional BT5 features).
-If both are supported, it will listen for both types simultaneously.
+アプリケーションはAndroid機能フラグを読み取り、スマートフォンの機種がBluetoothレガシーアドバタイズシグナル (BT4) のみの受信に対応しているか、Long Range + Extendedアドバタイズシグナル (BT5オプション機能) の受信にも対応するかを判断します。
+両方がサポートされている場合、両方のタイプを同時に読み取ります。
 
-All tested devices receive Bluetooth Legacy advertisements continuously.
+テストしたすべてのデバイスは、Bluetoothレガシーアドバタイズシグナルを継続的に受信します。
 
-For receiving Long Range and Extended Advertising signals, out of the tested devices, only the Samsung Galaxy S10 and the Huawei Mate 20 Pro devices can be recommended.
-Both receive the signals continuously.
-The S10 seems to have a bit better signal strength reception.
+Long Range + Extendedアドバタイズシグナルを受信する場合、テストしました端末のうち Samsung Galaxy S10とHuawei Mate 20 Pro だけが推奨されます。
+どちらも継続的に信号を受信できています。
+Samsung Galaxy S10の方が受信信号強度が良好です。
 
-The One Plus 6T and the Xiaomi Mi 9 both receive the signals but some power(?) saving feature or similar in the driver layer cause them to receive the signals for 5 seconds, then pause 15 seconds and this repeats.
-This unfortunately makes tracking of Open Drone ID signals rather impractical due to the long pauses.
-Both are based on Qualcomm Snapdragon chipsets.
-A SW update somewhere in Q4 2020 changed this behavior so the One Plus 6T would listen for 1 second, pause for 4 seconds and repeat.
-It might be possible that the driver layer alternate between listening to Coded PHY S=8 and S=2, causing this effect?
+OnePlus 6TとXiaomi Mi 9はどちらも信号を受信しますが、デバイスドライバ層の何らかの省電力機能等(?)により、5秒間信号を受信後、15秒間停止…が繰り返されます。
+このため、残念ながらOpenDroneID信号のトラッキングは、長い停止状態のために非現実的なものとなります。
+どちらもQualcomm Snapdragonチップセットをベースにしています。
+2020年第4四半期のどこかのソフトウェアアップデートでこの動作が変更され、OnePlus 6Tは1秒間受信し、4秒間停止…を繰り返すようになりました。
+もしかしたら、デバイスドライバ層がCoded PHYのS=8とS=2を交互にリッスンして、この状態を引き起こしている可能性があるかも知れません。
 
-The Motorola One Vision and the HMD Global Nokia 2.2 are not recommended.
-Both have the Android feature flags for Long Range and Extended Advertising set to true, but in reality they never receive those signals.
-There seems to be a clear error in the driver implementations of those devices or maybe they don't listen to the coded PHY on the primary channel but only on the secondary channel?
+Motorola One VisionとHMD Global Nokia 2.2は推奨致しません。
+どちらの機種もAndroid機能フラグで Long Range + Extendedアドバタイズシグナルが有効として設定されますが、実際にはそれらの信号を受信はしておりません。
+これらのデバイスドライバの実装に明らかな誤りがあるように思われます。あるいは、プライマリチャネルでコード化されたPHYをリッスンせず、セカンダリチャネルのみでリッスンしているかも知れません。
 
-The rest of the tested phones support receiving only Bluetooth Legacy Advertising signals.
+それ以外の機種は、Bluetoothレガシーアドバタイズシグナルのみ受信に対応しています。
+
 
 ### WiFi NAN
 
-Reception of WiFi NAN signals have been successfully tested on the Samsung Galaxy S10 device.
-It should be possible to receive WiFi NAN signals on the following devices, but please be aware that this has not been verified using this OpenDroneID Receiver application:
-- Samsung Galaxy S9, S10, S20 (and the various +, note, ultra etc. variants of these)
-- Google Pixel 2, 3, 4 (and the various A, XL variants of these)
+Samsung Galaxy S10端末でWiFi NAN信号の受信テストに成功しました。
+以下の端末でもWiFi NAN信号の受信が可能なはずですが、このOpenDroneID受信アプリケーションでの検証はしていませんのでご了承ください:
+- Samsung Galaxy S9, S10, S20 (+, note, ultra等の様々なバリエーション)
+- Google Pixel 2, 3, 4 (A、XL等の様々なバリエーション)
 - Xiaomi Mi 8, 9, Note 10, redmi K20 Pro/CC9 Pro/Note 10 Pro
 
 ### WiFi Beacon
 
-WiFi Beacon reception in the current implementation is limited to devices running Android 6 and higher.
-Reception has been tested on the following devices:
+現在の実装では、WiFi Beaconの受信はAndroid 6以上の端末に限定されます。
+以下の端末で受信を確認しています:
 - Google Pixel 3 (Android 11)
 - Samsung Galaxy S10 (Android 11)
 - OnePlus 6T (Android 10)
 - Samsung Galaxy A3 (Android 8) devices.
 
-Please note that On Android 8 and higher, by default the scanning frequency of Wi-Fi Beacons is [throttled](https://developer.android.com/guide/topics/connectivity/wifi-scan#wifi-scan-throttling).
-The only way to increase this is to enable the [Android Developer Mode](https://developer.android.com/studio/debug/dev-options) and then disable the WiFi scan throttling option.
+Android 8以降では、WiFi Beaconのスキャン頻度がデフォルトで [スロットル](https://developer.android.com/guide/topics/connectivity/wifi-scan#wifi-scan-throttling) になっていますのでご注意ください。
+これを増やすには [Android Developer Mode](https://developer.android.com/studio/debug/dev-options) を有効にし、WiFiスキャンのスロットリングオプションを無効にする必要があります。
 
-## High level SW Architecture
 
-An auto-generated view of the class structure can be seen in the below figure.
+## ハイレベルなソフトウェア・アーキテクチャ
+
+下図は自動生成されたクラス構成図です。
+
 
 ![](OpenDroneID.png)
