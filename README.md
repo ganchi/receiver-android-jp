@@ -24,6 +24,8 @@ https://github.com/opendroneid/opendroneid-core-c
 
 ※まっく氏は上記の説明ではうまくいかず、ビルド -> Build Bundle(s)/APK(s) -> Build APK(s)を実行、【...\Android\app\build\intermediates\apk\debug\app-debug.apk】を出力させ、これをスマートフォンに移動しインストールを実施しました。
 
+![](images/build01.jpg)
+
 完全な機能を実現するため、ソースコードをビルドする前に、Google Maps APIキーを取得する必要があります。
 APIキーがない場合は、アプリケーション起動、送信された信号を取得、リストと詳細情報がビュー表示されますが、地図上に表示されるビューは動作しませんのでご注意ください。
 ソースコードでは意図的にGoogle Maps APIキーは同梱提供されておらず、同一の理由で、すぐにビルド/利用可能なapkファイルも提供されてません。
