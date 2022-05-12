@@ -1,16 +1,19 @@
 # OpenDroneID Android 受信アプリケーション
 
-このプロジェクトは、OpenDroneID Bluetooth、WiFi NAN (Neighbor Aware Network)、WiFi BeaconシグナルのAndroidスマートフォン向け受信アプリケーション実装例のソースコードを提供します。このアプリケーションは、リモートID規格となる【ASTM F3411】Bluetooth、WiFi NAN、WiFi Beaconパーツと、DirectリモートID規格【ASD-STAN】prEN 4709-002 に準拠しています。
+このプロジェクトは、OpenDroneID Bluetooth、WiFi NAN (Neighbor Aware Network)、WiFi BeaconシグナルのAndroidスマートフォン向け受信アプリケーション実装例のソースコードを提供します。
+このアプリケーションは、リモートID規格となる【ASTM F3411】Bluetooth、WiFi NAN、WiFi Beaconパーツと、DirectリモートID規格【ASD-STAN】prEN 4709-002 に準拠しています。
 
 OpenDroneIDに関するより詳細な情報は、opendroneid-core-cプロジェクトをご覧ください:  
 https://github.com/opendroneid/opendroneid-core-c  
 
-このアプリケーションは、Bluetoothアドバタイズ(告知通信) / WiFi NANシグナルおよびビーコンを継続的にスキャンします。OpenDroneIDシグナル仕様に合致するものがあれば、その送信機をリストへ追加し、マップ上にドローンの位置を表示、OpenDroneIDデータの詳細内容を表示させることができます。
+このアプリケーションは、Bluetooth advertising / WiFi NANシグナルおよびBeaconを継続的にスキャンします。
+OpenDroneIDシグナル仕様に合致するものがあれば、その送信機をリストへ追加し、マップ上にドローンの位置を表示、OpenDroneIDデータの詳細内容を表示させることができます。
 
 
 ![](Screenshot.jpg)
 
-地図上の赤マーカーは、ドローンの位置を示します。青マーカーは、オペレーター / 離陸地点の位置を示します。(そのデータフィールドを受信している場合) またドローンが飛行した場所を示す赤い線がマップ上に表示されます。
+地図上の赤マーカーは、ドローンの位置を示します。青マーカーは、オペレーター / 離陸地点の位置を示します。
+(そのデータフィールドを受信している場合) またドローンが飛行した場所を示す赤い線がマップ上に表示されます。
 
 
 注意: この受信アプリケーションのユーザは、受信したOpenDroneIDシグナルが、信号を示している位置で空中を飛行しているドローン実機と同一であることを常に目視で確認する必要があります。
@@ -65,12 +68,12 @@ https://www.youtube.com/watch?v=OKslqHbcQuU
 - Motorola One Vision (Android 9)
 - Xiaomi Mi 9 (Android 9)
 
-アプリケーションはAndroid機能フラグを読み取り、スマートフォンの機種がBluetoothレガシーアドバタイズシグナル (BT4) のみの受信に対応しているか、Long Range + Extendedアドバタイズシグナル (BT5オプション機能) の受信にも対応するかを判断します。
+アプリケーションはAndroid機能フラグを読み取り、スマートフォンの機種がBluetooth Legacy Advertisingシグナル (BT4) のみの受信に対応しているか、Long Range + Extended Advertisingシグナル (BT5オプション機能) の受信にも対応するかを判断します。
 両方がサポートされている場合、両方のタイプを同時に読み取ります。
 
-テストしたすべてのデバイスは、Bluetoothレガシーアドバタイズシグナルを継続的に受信します。
+テストしたすべてのデバイスは、Bluetooth Legacy Advertisingシグナルを継続的に受信します。
 
-Long Range + Extendedアドバタイズシグナルを受信する場合、テストしました端末のうち Samsung Galaxy S10とHuawei Mate 20 Pro だけが推奨されます。
+Long Range + Extended Advertisingシグナルを受信する場合、テストしました端末のうち Samsung Galaxy S10とHuawei Mate 20 Pro だけが推奨されます。
 どちらも継続的に信号を受信できています。
 Samsung Galaxy S10の方が受信信号強度が良好です。
 
@@ -78,13 +81,13 @@ OnePlus 6TとXiaomi Mi 9はどちらも信号を受信しますが、デバイ�
 このため、残念ながらOpenDroneID信号のトラッキングは、長い停止状態のために非現実的なものとなります。
 どちらもQualcomm Snapdragonチップセットをベースにしています。
 2020年第4四半期のどこかのソフトウェアアップデートでこの動作が変更され、OnePlus 6Tは1秒間受信し、4秒間停止…を繰り返すようになりました。
-もしかしたら、デバイスドライバ層がCoded PHYのS=8とS=2を交互にリッスンして、この状態を引き起こしている可能性があるかも知れません。
+もしかしたら、デバイスドライバ層がCoded PHYのS=8とS=2を交互に受信し、この状態を引き起こしている可能性があるかも知れません。
 
 Motorola One VisionとHMD Global Nokia 2.2は推奨致しません。
-どちらの機種もAndroid機能フラグで Long Range + Extendedアドバタイズシグナルが有効として設定されますが、実際にはそれらの信号を受信はしておりません。
-これらのデバイスドライバの実装に明らかな誤りがあるように思われます。あるいは、プライマリチャネルでコード化されたPHYをリッスンせず、セカンダリチャネルのみでリッスンしているかも知れません。
+どちらの機種もAndroid機能フラグで Long Range + Extended Advertisingシグナルが有効として設定されますが、実際にはそれらの信号を受信はしておりません。
+これらのデバイスドライバの実装に明らかな誤りがあるように思われます。あるいは、プライマリチャネルでコード化されたPHYを受信せず、セカンダリチャネルのみで受信しているかも知れません。
 
-それ以外の機種は、Bluetoothレガシーアドバタイズシグナルのみ受信に対応しています。
+それ以外の機種は、Bluetooth Legacy Advertisingシグナルのみ受信に対応しています。
 
 
 ### WiFi NAN
