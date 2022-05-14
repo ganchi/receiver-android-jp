@@ -131,7 +131,7 @@ public class DebugActivity extends AppCompatActivity {
     private void showHelpMenu() {
         HelpMenu helpMenu = HelpMenu.newInstance();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        helpMenu.show(transaction, "help");
+        helpMenu.show(transaction, "ヘルプ");
     }
 
     @Override
@@ -163,9 +163,9 @@ public class DebugActivity extends AppCompatActivity {
         } else if (id == R.id.log_location) {
             String message;
             if (getLogEnabled())
-                message = "Logging to " + loggerFile;
+                message = "ここへロギング" + loggerFile;
             else
-                message = "Logging not activated";
+                message = "ログが有効ではありません";
             showToast(message);
             return true;
         }
@@ -244,7 +244,7 @@ public class DebugActivity extends AppCompatActivity {
                 // Check permission
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
                         ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                    Log.d(TAG, "onMapReady: call request permission");
+                    Log.d(TAG, "onMapReady: コールリクエスト許可");
                     requestLocationPermission(Constants.FINE_LOCATION_PERMISSION_REQUEST_CODE);
                 } else {
                     initialize();
@@ -280,7 +280,7 @@ public class DebugActivity extends AppCompatActivity {
         final Observer<Set<AircraftObject>> listObserver = airCrafts -> {
             if (airCrafts == null)
                 return;
-            setTitle(String.format(Locale.US, "%d drones", airCrafts.size()));
+            setTitle(String.format(Locale.US, "%d ドローン", airCrafts.size()));
         };
 
         mModel.getAllAircraft().observe(this, listObserver);
@@ -305,7 +305,7 @@ public class DebugActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
                         ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                    Log.d(TAG, "onMapReady: call request permission");
+                    Log.d(TAG, "onMapReady: コールリクエスト許可");
                     requestLocationPermission(Constants.FINE_LOCATION_PERMISSION_REQUEST_CODE);
                 } else {
                     initialize();
@@ -376,7 +376,7 @@ public class DebugActivity extends AppCompatActivity {
     }
 
     public void requestLocationPermission(int requestCode) {
-        Log.d(TAG, "requestLocationPermission: request permission");
+        Log.d(TAG, "requestLocationPermission: リクエスト許可");
 
         // Location permission has not been granted yet, request it.
         PermissionUtils.requestPermission(this, requestCode,
@@ -387,7 +387,7 @@ public class DebugActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {
         if (requestCode == Constants.FINE_LOCATION_PERMISSION_REQUEST_CODE) {
-            Log.d(TAG, "onRequestPermissionsResult: back from request FINE_LOCATION");
+            Log.d(TAG, "onRequestPermissionsResult: リクエストから戻る FINE_LOCATION");
             if (PermissionUtils.isPermissionGranted(permissions, grantResults,
                     Manifest.permission.ACCESS_FINE_LOCATION)) {
                 initialize();

@@ -94,12 +94,12 @@ public class WiFiNaNScanner {
             wifiAwareSession.subscribe(config, new DiscoverySessionCallback() {
                 @Override
                 public void onSubscribeStarted(@NonNull SubscribeDiscoverySession session) {
-                    Log.i(TAG, "Subscribeを開始しました");
+                    Log.i(TAG, "onSubscribeStarted");
                 }
 
                 @Override
                 public void onServiceDiscovered(PeerHandle peerHandle, byte[] serviceSpecificInfo, List<byte[]> matchFilter) {
-                    Log.i(TAG, "サービスが発見: " + serviceSpecificInfo.length +": " + Arrays.toString(serviceSpecificInfo));
+                    Log.i(TAG, "onServiceDiscovered: " + serviceSpecificInfo.length +": " + Arrays.toString(serviceSpecificInfo));
 
                     String transportType = "NAN";
                     LogMessageEntry logMessageEntry = new LogMessageEntry();
@@ -128,7 +128,7 @@ public class WiFiNaNScanner {
             int i = 0;
             for (byte b: mac)
                 macAddress[i++] = b;
-            Log.i(TAG, "Identity Listenerが変更されました: Identity MACが変更されました: " + Arrays.toString(macAddress));
+            Log.i(TAG, "identityChangedListener: onIdentityChanged. MAC: " + Arrays.toString(macAddress));
         }
     };
 
@@ -136,7 +136,7 @@ public class WiFiNaNScanner {
     public void startScan() {
         if (!wifiAwareSupported)
             return;
-        Log.i(TAG, "WiFi NaNにアタッチしています。");
+        Log.i(TAG, "WiFi NaNに接続しています");
         if (wifiAwareManager.isAvailable())
             wifiAwareManager.attach(attachCallback, identityChangedListener, null);
     }
@@ -145,7 +145,7 @@ public class WiFiNaNScanner {
     public void stopScan() {
         if (!wifiAwareSupported)
             return;
-        Log.i(TAG, "WiFi NaNをクローズします。");
+        Log.i(TAG, "WiFi NaNを終了します");
         if (wifiAwareManager.isAvailable() && wifiAwareSession != null)
             wifiAwareSession.close();
     }

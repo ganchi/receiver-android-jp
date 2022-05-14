@@ -596,7 +596,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="ロケーションタイプ" />
+                        android:text="位置情報タイプ" />
 
                     <TextView
                         android:id="@+id/operatorLocationType"

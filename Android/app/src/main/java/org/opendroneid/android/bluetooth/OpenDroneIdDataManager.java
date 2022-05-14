@@ -176,7 +176,7 @@ public class OpenDroneIdDataManager {
                 ac.identification2.setValue(data);
             } else {
                 Log.i(TAG, "メッセージタイプのベーシックIDを破棄しました: " + data.getIdType().toString() +
-                        ". Already have " + type1.toString() + " and " + type2.toString());
+                        ". 既に取得済 " + type1.toString() + " and " + type2.toString());
             }
         }
     }

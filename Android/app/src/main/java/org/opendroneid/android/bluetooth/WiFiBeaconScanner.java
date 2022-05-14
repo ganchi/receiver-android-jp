@@ -70,7 +70,7 @@ public class WiFiBeaconScanner {
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M ||
                 !context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI)) {
-            Toast.makeText(context, "WiFi Scanning is not supported", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "WiFiスキャンはサポートされていません", Toast.LENGTH_LONG).show();
             WiFiScanEnabled = false;
             return;
         }
@@ -80,7 +80,7 @@ public class WiFiBeaconScanner {
 
         wifiManager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         if (!wifiManager.isWifiEnabled()) {
-            Log.d(TAG, "Turning on Wi-Fi");
+            Log.d(TAG, "Wi-Fiチューニング");
             wifiManager.setWifiEnabled(true);
         }
         IntentFilter filter = new IntentFilter(WifiManager.SCAN_RESULTS_AVAILABLE_ACTION);
@@ -124,7 +124,7 @@ public class WiFiBeaconScanner {
     @RequiresApi(api = Build.VERSION_CODES.M)
     void handleScanResults(Intent intent) {
         if (wifiManager == null) {
-            Toast.makeText(context, "WiFi Beacon スキャナーの接続に失敗しました。", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "WiFi beacon スキャンの接続に失敗しました。", Toast.LENGTH_LONG).show();
             return;
         }
         boolean freshScanResult = intent.getBooleanExtra(WifiManager.EXTRA_RESULTS_UPDATED, false);
@@ -196,7 +196,7 @@ public class WiFiBeaconScanner {
         if (countDownTimer != null) {
             countDownTimer.cancel();
         }
-        Log.d(TAG, "WiFi Beaconのスキャンを停止しています");
+        Log.d(TAG, "WiFi Beacon スキャンを停止しています");
     }
 
     // There are 2 ways to control WiFi scan:
@@ -224,9 +224,9 @@ public class WiFiBeaconScanner {
 
     private void printScanStats(boolean ret) {
         StringBuilder sb = new StringBuilder();
-        sb.append("Started: ").append(startTime).append(" success: ").append(scanSuccess);
-        sb.append(", failed: ").append(scanFailed).append(" curr-time: ");
-        sb.append(getCurrTimeStr()).append(", curr-status: ").append(ret);
+        sb.append("開始しました: ").append(startTime).append(" 成功: ").append(scanSuccess);
+        sb.append(", 失敗しました: ").append(scanFailed).append(" curr-時間: ");
+        sb.append(getCurrTimeStr()).append(", curr-ステータス: ").append(ret);
 
         Log.d(TAG, sb.toString());
 

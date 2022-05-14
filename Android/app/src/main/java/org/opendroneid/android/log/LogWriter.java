@@ -37,7 +37,7 @@ public class LogWriter {
                 new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8));
         ExecutorService exec = Executors.newSingleThreadExecutor();
 
-        Log.i(TAG, "starting logging to " + file);
+        Log.i(TAG, "ログ取得を開始" + file);
         exec.submit(() -> {
             try {
                 loggingActive = true;
@@ -70,7 +70,7 @@ public class LogWriter {
                     }
                 }
             } catch (IOException e) {
-                Log.e(TAG, "error writing log", e);
+                Log.e(TAG, "ログ書き込みエラー", e);
             } finally {
                 try {
                     writer.flush();

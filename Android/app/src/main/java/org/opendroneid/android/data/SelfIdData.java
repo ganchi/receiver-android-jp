@@ -24,7 +24,7 @@ public class SelfIdData extends MessageData {
     public enum descriptionTypeEnum {
         Text,
         Emergency,
-        Extended_Status { @NonNull public String toString() { return "Ext_Status"; } },
+        Extended_Status { @NonNull public String toString() { return "Ext_ステータス"; } },
         Invalid,
     }
 
@@ -47,7 +47,7 @@ public class SelfIdData extends MessageData {
         if (operationDescription != null) {
             for (int c : operationDescription) {
                 if ((c <= 31 || c >= 127) && c != 0) {
-                    return "無効な文字列です";
+                    return "無効な文字列";
                 }
             }
             return new String(operationDescription);

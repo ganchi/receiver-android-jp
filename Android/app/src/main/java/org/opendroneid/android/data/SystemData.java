@@ -82,7 +82,7 @@ public class SystemData extends MessageData {
     public double getOperatorLatitude() { return operatorLatitude; }
     public String getOperatorLatitudeAsString() {
         if (operatorLatitude == 0 && operatorLongitude == 0)
-            return "Unknown";
+            return "不明";
         return String.format(Locale.US,"%3.7f", operatorLatitude);
     }
 
@@ -96,7 +96,7 @@ public class SystemData extends MessageData {
     public double getOperatorLongitude() { return operatorLongitude; }
     public String getOperatorLongitudeAsString() {
         if (operatorLatitude == 0 && operatorLongitude == 0)
-            return "Unknown";
+            return "不明";
         return String.format(Locale.US,"%3.7f", operatorLongitude);
     }
 
@@ -111,7 +111,7 @@ public class SystemData extends MessageData {
 
     private String getAltitudeAsString(double altitude) {
         if (altitude == -1000)
-            return "Unknown";
+            return "不明";
         return String.format(Locale.US,"%3.1f m", altitude);
     }
 
@@ -184,7 +184,7 @@ public class SystemData extends MessageData {
     long getSystemTimestamp() { return systemTimestamp; }
     public String getSystemTimestampAsString() {
         if (systemTimestamp == 0)
-            return "Unknown";
+            return "不明";
         Timestamp time = new Timestamp((1546300800L + systemTimestamp) * 1000);
         return time.toString();
     }

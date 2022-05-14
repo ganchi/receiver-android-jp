@@ -78,7 +78,7 @@ public class AuthenticationData extends MessageData {
 
     int getAuthLastPageIndex() { return authLastPageIndex; }
     public String getAuthLastPageIndexAsString() {
-        return String.format(Locale.US,"%d pages", authLastPageIndex);
+        return String.format(Locale.US,"%d ページ", authLastPageIndex);
     }
     public void setAuthLastPageIndex(int authLastPageIndex) {
         if (authLastPageIndex < 0)
@@ -103,7 +103,7 @@ public class AuthenticationData extends MessageData {
     long getAuthTimestamp() { return authTimestamp; }
     public String getAuthTimestampAsString() {
         if (authTimestamp == 0)
-            return "Unknown";
+            return "不明";
         Timestamp time = new Timestamp((1546300800L + authTimestamp) * 1000);
         return time.toString();
     }

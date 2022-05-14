@@ -466,7 +466,7 @@ public class OpenDroneIdParser {
         int type = (b & 0xF0) >> 4;
         header.type = Type.fromId(type);
         if (header.type == null) {
-            Log.e(TAG, "Header type unknown");
+            Log.e(TAG, "ヘッダタイプ不明");
             return null;
         }
         header.version = b & 0x0F;

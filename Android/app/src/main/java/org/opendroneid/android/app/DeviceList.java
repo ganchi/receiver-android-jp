@@ -108,7 +108,7 @@ public class DeviceList extends Fragment {
         mAdapter.withSelectable(true);
 
         mAdapter.withSelectionListener((item, selected) -> {
-            Log.d(TAG, "onSelectionChanged: "+item + " selected="+selected);
+            Log.d(TAG, "onSelectionChanged: "+item + " 選択しました="+selected);
             if (selected && item != null) {
                 if (mModel.getActiveAircraft().getValue() != item.object) {
                     // only set if different

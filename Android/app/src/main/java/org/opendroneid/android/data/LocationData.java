@@ -85,7 +85,7 @@ public class LocationData extends MessageData {
         if (direction != 361)
             return String.format(Locale.US,"%3.0f deg", direction);
         else
-            return ("Unknown");
+            return ("不明");
     }
     public void setDirection(double direction) {
         if (direction < 0 || direction > 360)
@@ -98,13 +98,13 @@ public class LocationData extends MessageData {
         if (speedHorizontal != 255)
             return String.format(Locale.US,"%3.2f m/s", speedHorizontal);
         else
-            return ("Unknown");
+            return ("不明");
     }
     public String getSpeedHorizontalLessPreciseAsString() {
         if (speedHorizontal != 255)
             return String.format(Locale.US,"%3.0fm/s", speedHorizontal);
         else
-            return ("Unknown");
+            return ("不明");
     }
     public void setSpeedHorizontal(double speedHorizontal) {
         if (speedHorizontal < 0 || speedHorizontal > 254.25)
@@ -117,7 +117,7 @@ public class LocationData extends MessageData {
         if (speedVertical != 63)
             return String.format(Locale.US,"%3.2f m/s", speedVertical);
         else
-            return ("Unknown");
+            return ("不明");
     }
     public void setSpeedVertical(double speedVertical) {
         if (speedVertical < -62 || speedVertical > 62)
@@ -128,7 +128,7 @@ public class LocationData extends MessageData {
     public double getLatitude() { return latitude; }
     public String getLatitudeAsString() {
         if (latitude == 0 && longitude == 0)
-            return "Unknown";
+            return "不明";
         return String.format(Locale.US,"%3.7f", latitude);
     }
     public void setLatitude(double latitude) {
@@ -142,7 +142,7 @@ public class LocationData extends MessageData {
     public double getLongitude() { return longitude; }
     public String getLongitudeAsString() {
         if (latitude == 0 && longitude == 0)
-            return "Unknown";
+            return "不明";
         return String.format(Locale.US,"%3.7f", longitude);
     }
     public void setLongitude(double longitude) {
@@ -155,7 +155,7 @@ public class LocationData extends MessageData {
 
     private String getAltitudeAsString(double altitude) {
         if (altitude == -1000)
-            return "Unknown";
+            return "不明";
         return String.format(Locale.US,"%3.1f m", altitude);
     }
     public double getAltitudePressure() { return altitudePressure; }
@@ -176,7 +176,7 @@ public class LocationData extends MessageData {
     public String getHeightAsString() { return getAltitudeAsString(height); }
     public String getHeightLessPreciseAsString() {
         if (height == -1000)
-            return "Unknown";
+            return "不明";
         return String.format(Locale.US,"%3.0fm", height);
     }
     public void setHeight(double height) {
@@ -215,7 +215,7 @@ public class LocationData extends MessageData {
             case meters_10: return "< 10 m";
             case meters_3: return "< 3 m";
             case meters_1: return "< 1 m";
-            default: return "Unknown";
+            default: return "不明";
         }
     }
     public void setHorizontalAccuracy(int horizontalAccuracy) {
@@ -254,7 +254,7 @@ public class LocationData extends MessageData {
             case meters_10: return "< 10 m";
             case meters_3: return "< 3 m";
             case meters_1: return "< 1 m";
-            default: return "Unknown";
+            default: return "不明";
         }
     }
     private VerticalAccuracyEnum intToVerticalAccuracy(int verticalAccuracy) {
@@ -290,7 +290,7 @@ public class LocationData extends MessageData {
             case meter_per_second_3: return "< 3 m/s";
             case meter_per_second_1: return "< 1 m/s";
             case meter_per_second_0_3: return "< 0.3 m/s";
-            default: return "Unknown";
+            default: return "不明";
         }
     }
     public void setSpeedAccuracy(int speedAccuracy) {
@@ -322,7 +322,7 @@ public class LocationData extends MessageData {
     public double getTimeAccuracy() { return timeAccuracy; }
     public String getTimeAccuracyAsString() {
         if (timeAccuracy == 0)
-            return "Unknown";
+            return "不明";
         else
             return String.format(Locale.US,"<= %1.1f s", timeAccuracy);
     }

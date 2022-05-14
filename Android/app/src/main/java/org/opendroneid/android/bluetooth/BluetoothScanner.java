@@ -115,7 +115,7 @@ public class BluetoothScanner {
         if (bluetoothAdapter == null)
             return;
 
-        Log.d(TAG, ">>>> startScan");
+        Log.d(TAG, ">>>> スキャン開始");
         bluetoothLeScanner = bluetoothAdapter.getBluetoothLeScanner();
 
         ScanFilter.Builder builder = new ScanFilter.Builder();
