@@ -1,5 +1,6 @@
 # OpenDroneID Android 受信アプリケーション
 
+※このリポジトリは、まっく氏が独断と偏見で？勝手に日本語化を進めているものです。お手柔らかにおねしゃすー。そして日本語以外の言語サポートは問い合わせも含め受け付け致しませんのでご承知おきください。(対応できませんためｗ)  
 このプロジェクトは、OpenDroneID Bluetooth、WiFi NAN (Neighbor Aware Network)、WiFi BeaconシグナルのAndroidスマートフォン向け受信アプリケーション実装例のソースコードを提供します。
 このアプリケーションは、リモートID規格となる【ASTM F3411】Bluetooth、WiFi NAN、WiFi Beaconパーツと、DirectリモートID規格【ASD-STAN】prEN 4709-002 に準拠しています。
 
