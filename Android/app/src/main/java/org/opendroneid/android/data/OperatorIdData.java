@@ -37,7 +37,7 @@ public class OperatorIdData extends MessageData {
         if (operatorId != null) {
             for (int c : operatorId) {
                 if ((c <= 31 || c >= 127) && c != 0) {
-                    return "Invalid String";
+                    return "無効な文字列です";
                 }
             }
             return new String(operatorId);

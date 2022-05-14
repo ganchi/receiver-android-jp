@@ -496,7 +496,7 @@ public class OpenDroneIdParser {
                 payloadObj = parseMessagePack(payload, offset);
                 break;
             default:
-                Log.w(TAG, "Received unhandled message type: id=" + type);
+                Log.w(TAG, "受信した未処理メッセージタイプ: ID=" + type);
 
         }
         Message<Payload> message = new Message<>(header, payloadObj, timestamp, msgCounter);

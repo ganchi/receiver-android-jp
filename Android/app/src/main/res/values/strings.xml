@@ -6,30 +6,30 @@
 !-->
 <resources>
     <string name="app_name">OpenDroneID</string>
-    <string name="bt_not_supported">Bluetooth is not supported on this device.</string>
-    <string name="bt_not_enabled_leaving">This application will not work without enabling Bluetooth.</string>
-    <string name="wifi_not_enabled_leaving">This application will not work without enabling WiFi.</string>
-    <string name="info">info</string>
+    <string name="bt_not_supported">このデバイスはBluetoothに対応していません。</string>
+    <string name="bt_not_enabled_leaving">Bluetoothを有効にしないと、このアプリケーションは動作しません。</string>
+    <string name="wifi_not_enabled_leaving">WiFiを有効にしないと、このアプリケーションは動作しません。</string>
+    <string name="info">Info</string>
 
-    <string name="coded_phy_not_supported">Coded Phy not supported</string>
-    <string name="coded_phy_supported">Coded Phy supported</string>
-    <string name="ea_not_supported">Extended Advertising not supported</string>
-    <string name="ea_supported">Extended Advertising supported</string>
-    <string name="nan_not_supported">WiFi NaN not supported</string>
-    <string name="nan_supported">WiFi NaN supported</string>
+    <string name="coded_phy_not_supported">Coded Phy 非対応</string>
+    <string name="coded_phy_supported">Coded Phy 対応</string>
+    <string name="ea_not_supported">Extended Advertising 非対応</string>
+    <string name="ea_supported">Extended Advertising 対応</string>
+    <string name="nan_not_supported">WiFi NaN 非対応</string>
+    <string name="nan_supported">WiFi NaN 対応</string>
 
-    <string name="wifi_beacon_scan_not_supported">WiFi Beacon Scan not supported</string>
-    <string name="wifi_beacon_scan_supported">WiFi Beacon Scan supported</string>
+    <string name="wifi_beacon_scan_not_supported">WiFi Beacon スキャン非対応</string>
+    <string name="wifi_beacon_scan_supported">WiFi Beacon スキャン対応</string>
 
-    <string name="permission_rationale_location">This application will not work without enabling location access.</string>
-    <string name="permission_required_toast">Location permission is required for this application to work.</string>
+    <string name="permission_rationale_location">位置情報アクセスを有効にしないと、このアプリケーションは動作しません。</string>
+    <string name="permission_required_toast">このアプリケーションを動作させるためには、位置情報の許可が必要です。</string>
 
-    <string name="drone_icon_content_description">Drone icon</string>
+    <string name="drone_icon_content_description">Droneアイコン</string>
 
     <string name="bluetooth_help_heading">Bluetooth</string>
-    <string name="bluetooth_help_text">Sample</string>
+    <string name="bluetooth_help_text">サンプル</string>
     <string name="beacon_help_heading">Wi-Fi Beacon</string>
-    <string name="beacon_help_text">Sample</string>
+    <string name="beacon_help_text">サンプル</string>
     <string name="nan_help_heading">Wi-Fi NaN</string>
-    <string name="nan_help_text">Sample</string>
+    <string name="nan_help_text">サンプル</string>
 </resources>

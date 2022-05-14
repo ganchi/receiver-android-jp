@@ -124,7 +124,7 @@ public class WiFiBeaconScanner {
     @RequiresApi(api = Build.VERSION_CODES.M)
     void handleScanResults(Intent intent) {
         if (wifiManager == null) {
-            Toast.makeText(context, "WiFi beacon scanner attach failed.", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "WiFi Beacon スキャナーの接続に失敗しました。", Toast.LENGTH_LONG).show();
             return;
         }
         boolean freshScanResult = intent.getBooleanExtra(WifiManager.EXTRA_RESULTS_UPDATED, false);
@@ -185,7 +185,7 @@ public class WiFiBeaconScanner {
         } else {
             scanFailed++;
         }
-        Log.d(TAG, "start_scan:" + ret);
+        Log.d(TAG, "スキャン_開始:" + ret);
         printScanStats(ret);
     }
 
@@ -196,7 +196,7 @@ public class WiFiBeaconScanner {
         if (countDownTimer != null) {
             countDownTimer.cancel();
         }
-        Log.d(TAG, "Stopping WiFi Beacon scanning");
+        Log.d(TAG, "WiFi Beaconのスキャンを停止しています");
     }
 
     // There are 2 ways to control WiFi scan:

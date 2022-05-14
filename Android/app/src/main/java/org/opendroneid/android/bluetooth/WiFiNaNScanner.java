@@ -53,7 +53,7 @@ public class WiFiNaNScanner {
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O ||
             !context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI_AWARE)) {
-            Log.i(TAG, "WiFi Aware is not supported.");
+            Log.i(TAG, "WiFi Awareはサポートされていません。");
             return;
         }
         wifiAwareSupported = true;
@@ -61,7 +61,7 @@ public class WiFiNaNScanner {
 
         wifiAwareManager = (WifiAwareManager) context.getSystemService(Context.WIFI_AWARE_SERVICE);
         if (wifiAwareManager != null && !wifiAwareManager.isAvailable()) {
-            Toast.makeText(context, "WiFi Aware is currently not available. Code to properly handle this must be added.", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "WiFi Awareは現在使用できません。これを適切に処理するコードを追加する必要があります。", Toast.LENGTH_LONG).show();
         }
 
         IntentFilter filter = new IntentFilter(WifiAwareManager.ACTION_WIFI_AWARE_STATE_CHANGED);
@@ -69,10 +69,10 @@ public class WiFiNaNScanner {
             @Override
             public void onReceive(Context context, Intent intent) {
                 if (wifiAwareManager.isAvailable()) {
-                    Log.i(TAG, "WiFi Aware became available.");
+                    Log.i(TAG, "WiFi Awareが使用可能になりました。");
                     startScan();
                 } else {
-                    Toast.makeText(context, "WiFi Aware was lost. Code to properly handle this must be added.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, "WiFi Awareが消失しました。これを適切に処理するコードを追加する必要があります。", Toast.LENGTH_LONG).show();
                 }
             }
         };
@@ -94,12 +94,12 @@ public class WiFiNaNScanner {
             wifiAwareSession.subscribe(config, new DiscoverySessionCallback() {
                 @Override
                 public void onSubscribeStarted(@NonNull SubscribeDiscoverySession session) {
-                    Log.i(TAG, "onSubscribeStarted");
+                    Log.i(TAG, "Subscribeを開始しました");
                 }
 
                 @Override
                 public void onServiceDiscovered(PeerHandle peerHandle, byte[] serviceSpecificInfo, List<byte[]> matchFilter) {
-                    Log.i(TAG, "onServiceDiscovered: " + serviceSpecificInfo.length +": " + Arrays.toString(serviceSpecificInfo));
+                    Log.i(TAG, "サービスが発見: " + serviceSpecificInfo.length +": " + Arrays.toString(serviceSpecificInfo));
 
                     String transportType = "NAN";
                     LogMessageEntry logMessageEntry = new LogMessageEntry();
@@ -116,7 +116,7 @@ public class WiFiNaNScanner {
 
         @Override
         public void onAttachFailed() {
-            Toast.makeText(context, "wifiAware onAttachFailed. Code to properly handle this must be added.", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "WiFi Awareの認識に失敗しました。これを適切に処理するコードを追加する必要があります。", Toast.LENGTH_LONG).show();
         }
     };
 
@@ -128,7 +128,7 @@ public class WiFiNaNScanner {
             int i = 0;
             for (byte b: mac)
                 macAddress[i++] = b;
-            Log.i(TAG, "identityChangedListener: onIdentityChanged. MAC: " + Arrays.toString(macAddress));
+            Log.i(TAG, "Identity Listenerが変更されました: Identity MACが変更されました: " + Arrays.toString(macAddress));
         }
     };
 
@@ -136,7 +136,7 @@ public class WiFiNaNScanner {
     public void startScan() {
         if (!wifiAwareSupported)
             return;
-        Log.i(TAG, "WiFi NaN attaching");
+        Log.i(TAG, "WiFi NaNにアタッチしています。");
         if (wifiAwareManager.isAvailable())
             wifiAwareManager.attach(attachCallback, identityChangedListener, null);
     }
@@ -145,7 +145,7 @@ public class WiFiNaNScanner {
     public void stopScan() {
         if (!wifiAwareSupported)
             return;
-        Log.i(TAG, "WiFi NaN closing");
+        Log.i(TAG, "WiFi NaNをクローズします。");
         if (wifiAwareManager.isAvailable() && wifiAwareSession != null)
             wifiAwareSession.close();
     }

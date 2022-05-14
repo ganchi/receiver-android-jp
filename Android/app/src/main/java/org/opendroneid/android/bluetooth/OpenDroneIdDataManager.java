@@ -175,7 +175,7 @@ public class OpenDroneIdDataManager {
             if (type2 == Identification.IdTypeEnum.None || type2 == data.getIdType()) {
                 ac.identification2.setValue(data);
             } else {
-                Log.i(TAG, "Discarded Basic ID message of type: " + data.getIdType().toString() +
+                Log.i(TAG, "メッセージタイプのベーシックIDを破棄しました: " + data.getIdType().toString() +
                         ". Already have " + type1.toString() + " and " + type2.toString());
             }
         }

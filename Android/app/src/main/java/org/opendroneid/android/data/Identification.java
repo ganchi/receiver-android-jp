@@ -88,7 +88,7 @@ public class Identification extends MessageData {
             if (idType == IdTypeEnum.Serial_Number || idType == IdTypeEnum.CAA_Registration_ID) {
                 for (int c : uasId) {
                     if ((c <= 31 || c >= 127) && c != 0) {
-                        return "Invalid ID String";
+                        return "無効なID文字列です";
                     }
                 }
                 return new String(uasId);
