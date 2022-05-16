@@ -6,7 +6,7 @@
 
 リモートIDに関する一般的な情報は [こちら](https://github.com/opendroneid/opendroneid-core-c#opendroneid-core-c)をご参照ください。またリモートID送信デバイス一覧は [こちら](transmitter-devices.md) に記載されています。
 
-ASD-STAN prEN4709-02 (EU仕様) と ASTM F3411-19 (US仕様) 規格の現在の仕様は、UAから地上の観察者(オブザーバ)に適切な識別とテレメトリーデータを伝搬するために、免許不要のスペクトル方式無線プロトコルに依存します。
+ASD-STAN prEN4709-02 (EU仕様) と ASTM F3411-19 (US仕様) 規格の現在の仕様は、UAから地上の観察者 (オブザーバ) に適切な識別とテレメトリーデータを伝搬するために、免許不要のスペクトル方式無線プロトコルに依存します。
 特に Bluetooth 4 Legacy Advertising、Bluetooth 5 Long Range (Advertising Extensions over Coded PHY S8)、Wi-Fi Beacon、Wi-Fi Neighbor Awareness Network (NAN) 上の伝送方式が定義されています。
 これらの無線技術を選択した主たる理由は、一般のスマートフォン端末でこれらのサポート要件を満たしているからとなります。
 
