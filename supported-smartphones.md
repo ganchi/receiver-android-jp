@@ -17,7 +17,6 @@ ASD-STAN prEN4709-02 (EU仕様) と ASTM F3411-19 (US仕様) 規格の現在の�
 ASTMリモートID規格を入手するには、こちらの [link](https://www.astm.org/Standards/F3411.htm) をご覧ください。
 
 **免責事項:** テストされたデバイス一覧は完全なものではありません。また、いかなる保証も致しませんのでご了承ください。
-
 誤記ないし誤解を招くような情報が含まれている場合がございます。
 またスマートフォンメーカーのソフトウェアアップデートにより、受信能力が向上または低下するような変更が発生する場合も考えられます。
 もし不完全な情報や、一貫性のない情報、誤った情報を見つけた場合は、GitHubのissue投稿を実施ください。
@@ -103,15 +102,11 @@ LegacyとLong Rangeのアドバタイズを同時に表示するテストは無�
 <p align="center"> 図2: 上記のテスト手順を説明したスクリーンショット</p>
 
 
-
 ### Wi-Fi Beacon ブロードキャスト
 
 今のところ、Wi-Fi Beaconメッセージを送信するドローンやアドオンデバイスを用意し、OpenDroneID受信アプリケーションでスマートフォンの受信テストを行うしか、テスト方法はないようです。
 
 ただし、Android 6 (Marshmallow)以降を搭載したすべてのAndroid端末は、Wi-Fi Beaconの信号を受信できるものと予想されます。
-
-There will be a fair amount of variation in the reception frequency from one device to another, since the Android OS enforces various [throttling](https://developer.android.com/guide/topics/connectivity/wifi-scan#wifi-scan-throttling) mechanisms on Wi-Fi scanning.
-In some cases it is possible to increase the scanning frequency by enabling the [Android Developer Mode](https://developer.android.com/studio/debug/dev-options) and disabling the WiFi scan throttling option.
 
 Android OSはWi-Fiスキャンに様々な [スロットリング](https://developer.android.com/guide/topics/connectivity/wifi-scan#wifi-scan-throttling) 機構を施しているため、端末によって受信周波数にかなりのバラツキがあります。
 [Android Developer Mode](https://developer.android.com/studio/debug/dev-options) を有効にし、WiFiスキャンのスロットリングオプションを無効にすることで、スキャン頻度を上げることができる場合があります。
@@ -135,18 +130,13 @@ Android OSはWi-Fiスキャンに様々な [スロットリング](https://devel
 フォルダ内のスクリーンショットには、テストした機能に応じて名前を付けてください。
 以下のテンプレートを使用することをお勧め致します:
 
-- `bt_basic.jpg` showing the result of passing the elimination criteria - screenshot from the nRF Connect Device information.
-- `bt_lr_adv.jpg` showing the reception of the LR advertisements - screenshot from the nRF Connect scanning.
-- `bt_lr_rssi.jpg` showing the LR messages’ continuous reception - screenshot from the nRF Connect RSSI graph with the Favorites filter turned on.
-- `wifi_beacon.jpg` showing the reception of the Wi-Fi Beacon DRI messages - screenshot from the OpenDroneID app.
-- `wifi_nan.jpg` showing the capabilities to receive the Wi-Fi NAN signals - screenshot from the AIDA64 app.
 - `bt_basic.jpg` 端末除外基準を通過した結果を示します - nRF Connectのデバイス情報のスクリーンショットです。
 - `bt_lr_adv.jpg` LRアドバタイズの受信状況を示します - nRF Connectスキャンのスクリーンショットです。
 - `bt_lr_rssi.jpg` LRメッセージの連続受信を示します - お気に入りフィルターをオンにした nRF Connect RSSIグラフのスクリーンショットです。
 - `wifi_beacon.jpg` Wi-Fi Beacon DRIメッセージの受信を示します - OpenDroneIDアプリケーションのスクリーンショットです。
 - `wifi_nan.jpg` Wi-FiのNAN信号の受信能力を示します - AIDA64アプリケーションのスクリーンショットです。
 
-次に、合格または不合格のアイコンが付いたデバイスの一覧表を編集し、テストの月、年を追加し、最後に【検証】の列にフォルダへのリンクを付けます。
+次に、機能における合格または不合格のアイコンが付いたデバイスの一覧表を編集し、テストの月、年を追加し、最後に【検証】の列にフォルダへのリンクを付けます。
 または、必要な情報を含むIssueを作成すれば、一覧に追加されます。
 
 
@@ -164,7 +154,7 @@ Android OSはWi-Fiスキャンに様々な [スロットリング](https://devel
 ### デバイスとその機能一覧
 
 テストしたデバイスの一覧は下表をご覧ください。
-各デバイスについて、(動作確認にて)合格の場合は✅、不合格の場合は❌のいずれかを記載しています。
+各デバイスについて、機能における合格の場合は✅、不合格の場合は❌のいずれかを記載しています。
 各テストには、それが起こったおおよその日付が含まれています。
 デバイスは最新のOSバージョンでテストされたと仮定しています。
 
