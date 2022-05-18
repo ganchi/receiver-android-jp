@@ -254,6 +254,12 @@ public class AircraftMapView extends SupportMapFragment implements OnMapReadyCal
             return;
 
         this.googleMap = googleMap;
+        
+        // Add a marker in Tokyo station and move the camera
+        LatLng tokyo = new LatLng(35.681167, 139.767052);
+        this.googleMap.addMarker(new MarkerOptions().position(tokyo).title("東京駅です！"));
+        this.googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(tokyo, 15));        
+        
         setMapSettings();
     }
 
