@@ -183,7 +183,8 @@ public class DebugActivity extends AppCompatActivity {
     }
 
     private File getLoggerFileDir(String name) {
-        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "OpenDroneID");
+        Context context = getApplicationContext();
+        File file = new File(context.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS), "OpenDroneID");
         if (!file.mkdirs()) {
             file = getExternalFilesDir(null);
         }
@@ -228,7 +229,9 @@ public class DebugActivity extends AppCompatActivity {
                     Intent panelIntent = new Intent(Settings.Panel.ACTION_WIFI);
                     startActivityForResult(panelIntent, Constants.REQUEST_ENABLE_WIFI);
                 } else {
-                    wifiManager.setWifiEnabled(true);
+                    // wifiManager.setWifiEnabled(true);
+                    // Android 10ではアプリ側でのWiFiオンオフができなくなったため、代替としてトーストメッセージを表示させます
+                    showToast("このデバイスのWiFiを有効にしてください。");
                 }
             }
         }
