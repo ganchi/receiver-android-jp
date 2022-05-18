@@ -332,7 +332,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="気圧高度" />
+                        android:text="高度(気圧)" />
 
                     <TextView
                         android:id="@+id/altitudePressure"
@@ -342,7 +342,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="標高" />
+                        android:text="高度(ジオイド)" />
 
                     <TextView
                         android:id="@+id/altitudeGeodetic"
@@ -357,7 +357,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="方向" />
+                        android:text="方位角" />
 
                     <TextView
                         android:id="@+id/direction"
@@ -407,7 +407,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="高さ" />
+                        android:text="離陸高度" />
 
                     <TextView
                         android:id="@+id/height"
@@ -417,7 +417,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="高さ以上" />
+                        android:text="高度(機体)状態" />
 
                     <TextView
                         android:id="@+id/heightType"
@@ -432,7 +432,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="測位水平値" />
+                        android:text="水平精度" />
 
                     <TextView
                         android:id="@+id/horizontalAccuracy"
@@ -442,7 +442,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="測位垂直値" />
+                        android:text="垂直精度" />
 
                     <TextView
                         android:id="@+id/verticalAccuracy"
@@ -457,7 +457,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="気圧値" />
+                        android:text="気圧精度" />
 
                     <TextView
                         android:id="@+id/baroAccuracy"
@@ -467,7 +467,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="速度値" />
+                        android:text="速度精度" />
 
                     <TextView
                         android:id="@+id/speedAccuracy"
@@ -482,7 +482,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="時刻値" />
+                        android:text="時刻精度" />
 
                     <TextView
                         android:id="@+id/timeAccuracy"
