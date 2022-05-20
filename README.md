@@ -46,7 +46,7 @@ Raffaello KWOS氏: EASA REMOTE ID, come funziona e come riceverlo: OpenDroneID A
 https://www.youtube.com/watch?v=OKslqHbcQuU
 
 
-開発作業の兼ね合いで、一時的にAPKファイルを配置します。ですが完全にまっく氏のWork的なものとなりますのでご承知おきください。
+開発作業の兼ね合いで、一時的にAPKファイルを配置します。ですが完全にまっく氏のWork的なものとなりますのでご承知おきください。  
 https://github.com/ToshihiroMakuuchi/receiver-android-jp/releases/tag/v0.1
 
 
