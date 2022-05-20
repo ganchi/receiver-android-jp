@@ -81,7 +81,9 @@ public class WiFiBeaconScanner {
         wifiManager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         if (!wifiManager.isWifiEnabled()) {
             Log.d(TAG, "Wi-Fiチューニング");
-            wifiManager.setWifiEnabled(true);
+        	// wifiManager.setWifiEnabled(true);
+        	// Android 10ではアプリ側でのWiFiオンオフができなくなったため、代替としてトーストメッセージを表示させます
+        	showToast("このデバイスのWiFiを有効にしてください！");
         }
         IntentFilter filter = new IntentFilter(WifiManager.SCAN_RESULTS_AVAILABLE_ACTION);
 
@@ -94,6 +96,9 @@ public class WiFiBeaconScanner {
         };
 
         context.registerReceiver(myReceiver, filter);
+    }
+
+    private void showToast(String s) {
     }
 
     void processRemoteIdVendorIE(ScanResult scanResult, ByteBuffer buf) {

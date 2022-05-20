@@ -84,7 +84,8 @@ public class DebugActivity extends AppCompatActivity {
     private File loggerFile;
     private LogWriter logger;
 
-    private Handler handler;
+    // Wake the main Activity thread regularly, to update time counters and other UI elements
+    private Handler handler = new Handler(Looper.getMainLooper());
     private Runnable runnableCode;
 
     @Override
@@ -337,8 +338,6 @@ public class DebugActivity extends AppCompatActivity {
     protected void onResume() {
         Log.d(TAG, "onResume");
 
-        // Wake the main Activity thread regularly, to update time counters and other UI elements
-        handler = new Handler();
         runnableCode = () -> {
             for (AircraftObject aircraft : dataManager.aircraft.values()) {
                 aircraft.updateShadowBasicId();
