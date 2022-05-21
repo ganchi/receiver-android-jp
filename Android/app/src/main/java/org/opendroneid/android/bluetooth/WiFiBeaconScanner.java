@@ -98,9 +98,6 @@ public class WiFiBeaconScanner {
         context.registerReceiver(myReceiver, filter);
     }
 
-    private void showToast(String s) {
-    }
-
     void processRemoteIdVendorIE(ScanResult scanResult, ByteBuffer buf) {
         if (buf.remaining() < 30)
             return;
