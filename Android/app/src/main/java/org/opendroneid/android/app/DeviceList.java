@@ -10,8 +10,10 @@ import androidx.core.content.ContextCompat;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.graphics.BlendMode;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.os.Bundle;
@@ -230,9 +232,11 @@ public class DeviceList extends Fragment {
                     Log.w(TAG, "on changed: " + identification.getIdType() + ", " + identification.getUasIdAsString() + ", " + this);
                     setIdText(identification);
 
-                    droneIcon.setColorFilter(0xff00ff00, PorterDuff.Mode.MULTIPLY);
-                    iconImageView.setImageDrawable(droneIcon);
+                    // droneIcon.setColorFilter(0xff00ff00, PorterDuff.Mode.MULTIPLY);
+                    droneIcon.setColorFilter(new PorterDuffColorFilter(0xff00ff00, PorterDuff.Mode.MULTIPLY));
                 }
+                    iconImageView.setImageDrawable(droneIcon);
+
             }
         };
     }
