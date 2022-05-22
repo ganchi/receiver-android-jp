@@ -27,7 +27,8 @@ OpenDroneIDシグナル仕様に合致するものがあれば、その送信機
 アプリケーションをビルドするには、Android Studioを使用します。プロジェクトをインポートして (File -> New -> Import Project)、【Android】フォルダを指定します。
 次に、Build -> Make Projectを実行します。  
 
-※まっく氏は上記の説明ではうまくいかず、ビルド -> Build Bundle(s)/APK(s) -> Build APK(s)を実行、【...\Android\app\build\intermediates\apk\debug\app-debug.apk】を出力させ、これをスマートフォンに移動しインストールを実施しました。
+> **Note**
+> まっく氏は上記の説明ではうまくいかず、ビルド -> Build Bundle(s)/APK(s) -> Build APK(s)を実行、【...\Android\app\build\intermediates\apk\debug\app-debug.apk】を出力させ、これをスマートフォンに移動しインストールを実施しました。
 
 ![](images/build01.jpg)
 
