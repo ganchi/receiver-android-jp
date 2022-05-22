@@ -572,7 +572,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="システム/オペレータ" />
+                android:text="オペレータ情報" />
 
             <TextView
                 android:id="@+id/systemLastUpdate"
