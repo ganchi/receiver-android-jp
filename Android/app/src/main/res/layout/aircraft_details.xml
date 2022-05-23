@@ -283,7 +283,7 @@
 
             <TextView
                 style="@style/Details.Heading"
-                android:text="位置情報" />
+                android:text="機体・フライト情報" />
 
             <TextView
                 android:id="@+id/posLastUpdate"
@@ -332,7 +332,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="高度(気圧)" />
+                        android:text="気圧高度" />
 
                     <TextView
                         android:id="@+id/altitudePressure"
@@ -357,7 +357,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="方位角" />
+                        android:text="軌道方向" />
 
                     <TextView
                         android:id="@+id/direction"
@@ -382,7 +382,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="水平速度" />
+                        android:text="速度" />
 
                     <TextView
                         android:id="@+id/horiSpeed"
@@ -392,7 +392,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="昇降速度" />
+                        android:text="垂直速度" />
 
                     <TextView
                         android:id="@+id/vertSpeed"
@@ -407,7 +407,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="離陸高度" />
+                        android:text="対地高度" />
 
                     <TextView
                         android:id="@+id/height"
@@ -417,7 +417,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="高度(機体)状態" />
+                        android:text="対地高度種別" />
 
                     <TextView
                         android:id="@+id/heightType"
@@ -457,7 +457,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="気圧精度" />
+                        android:text="気圧高度精度" />
 
                     <TextView
                         android:id="@+id/baroAccuracy"
@@ -492,7 +492,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="時刻情報" />
+                        android:text="時刻" />
 
                     <TextView
                         android:id="@+id/timestamp"
@@ -515,7 +515,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="製造情報" />
+                android:text="セルフID情報" />
 
             <TextView
                 android:id="@+id/selfIdLastUpdate"
@@ -539,7 +539,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="製造番号" />
+                        android:text="セルフID情報" />
 
                     <TextView
                         android:id="@+id/selfIdDescription"
@@ -572,7 +572,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="所有者情報" />
+                android:text="システム情報" />
 
             <TextView
                 android:id="@+id/systemLastUpdate"
@@ -596,7 +596,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="位置情報タイプ" />
+                        android:text="操縦者位置種別" />
 
                     <TextView
                         android:id="@+id/operatorLocationType"
@@ -606,7 +606,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="高度" />
+                        android:text="操縦者高度" />
 
                     <TextView
                         android:id="@+id/systemAltitudeGeo"
@@ -621,7 +621,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="緯度" />
+                        android:text="操縦者緯度" />
 
                     <TextView
                         android:id="@+id/systemLatitude"
@@ -631,7 +631,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="経度" />
+                        android:text="操縦者経度" />
 
                     <TextView
                         android:id="@+id/systemLongitude"
@@ -754,7 +754,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="所有者情報" />
+                android:text="操縦者情報" />
 
             <TextView
                 android:id="@+id/operatorIdLastUpdate"
@@ -778,7 +778,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="所有者ID" />
+                        android:text="操縦者ID" />
 
                     <TextView
                         android:id="@+id/operatorId"
@@ -811,7 +811,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="認証番号" />
+                android:text="認証情報" />
 
             <TextView
                 android:id="@+id/authLastUpdate"
