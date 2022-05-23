@@ -342,7 +342,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="高度(ジオイド)" />
+                        android:text="対地高度" />
 
                     <TextView
                         android:id="@+id/altitudeGeodetic"
@@ -407,7 +407,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="対地高度" />
+                        android:text="高さ" />
 
                     <TextView
                         android:id="@+id/height"
