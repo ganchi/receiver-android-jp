@@ -27,7 +27,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="接続" />
+                android:text="接続情報" />
 
             <TextView
                 android:id="@+id/msgVersion"
@@ -139,7 +139,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="ベーシックID 1" />
+                android:text="登録番号 1" />
 
             <TextView
                 android:id="@+id/infoLastUpdate1"
@@ -212,7 +212,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="ベーシックID 2" />
+                android:text="登録番号 2" />
 
             <TextView
                 android:id="@+id/infoLastUpdate2"
@@ -492,7 +492,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="タイムスタンプ" />
+                        android:text="時刻情報" />
 
                     <TextView
                         android:id="@+id/timestamp"
@@ -515,7 +515,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="セルフID" />
+                android:text="製造番号" />
 
             <TextView
                 android:id="@+id/selfIdLastUpdate"
@@ -539,7 +539,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="オペレーション" />
+                        android:text="製造情報" />
 
                     <TextView
                         android:id="@+id/selfIdDescription"
@@ -572,7 +572,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="オペレータ情報" />
+                android:text="操縦者情報" />
 
             <TextView
                 android:id="@+id/systemLastUpdate"
@@ -706,7 +706,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="タイムスタンプ" />
+                        android:text="システム時刻" />
 
                     <TextView
                         android:id="@+id/systemTimestamp"
@@ -754,7 +754,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="オペレータID" />
+                android:text="操縦者ID情報" />
 
             <TextView
                 android:id="@+id/operatorIdLastUpdate"
@@ -778,7 +778,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="オペレータID" />
+                        android:text="操縦者ID" />
 
                     <TextView
                         android:id="@+id/operatorId"
@@ -811,7 +811,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="認証更新" />
+                android:text="認証番号" />
 
             <TextView
                 android:id="@+id/authLastUpdate"
@@ -845,7 +845,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="期間" />
+                        android:text="データ長" />
 
                     <TextView
                         android:id="@+id/authLength"
@@ -860,7 +860,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="タイムスタンプ" />
+                        android:text="認証時刻" />
 
                     <TextView
                         android:id="@+id/authTimestamp"
@@ -876,7 +876,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="認証情報" />
+                        android:text="認証データ" />
 
                     <TextView
                         android:id="@+id/authData"
