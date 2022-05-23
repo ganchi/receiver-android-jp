@@ -139,7 +139,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="登録番号 1" />
+                android:text="登録記号 1" />
 
             <TextView
                 android:id="@+id/infoLastUpdate1"
@@ -163,7 +163,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="タイプ" />
+                        android:text="種類" />
 
                     <TextView
                         android:id="@+id/infoType1"
@@ -173,7 +173,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="IDタイプ" />
+                        android:text="ID種別" />
 
                     <TextView
                         android:id="@+id/infoIdType1"
@@ -212,7 +212,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="登録番号 2" />
+                android:text="登録記号 2" />
 
             <TextView
                 android:id="@+id/infoLastUpdate2"
@@ -236,7 +236,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="タイプ" />
+                        android:text="種類" />
 
                     <TextView
                         android:id="@+id/infoType2"
@@ -246,7 +246,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="IDタイプ" />
+                        android:text="ID種別" />
 
                     <TextView
                         android:id="@+id/infoIdType2"
@@ -515,7 +515,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="製造番号" />
+                android:text="製造情報" />
 
             <TextView
                 android:id="@+id/selfIdLastUpdate"
@@ -539,7 +539,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="製造情報" />
+                        android:text="製造番号" />
 
                     <TextView
                         android:id="@+id/selfIdDescription"
@@ -549,7 +549,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="タイプ" />
+                        android:text="情報種別" />
 
                     <TextView
                         android:id="@+id/selfIdType"
@@ -572,7 +572,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="操縦者情報" />
+                android:text="所有者情報" />
 
             <TextView
                 android:id="@+id/systemLastUpdate"
@@ -696,7 +696,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="型式分類" />
+                        android:text="エリア分類" />
 
                     <TextView
                         android:id="@+id/classificationType"
@@ -754,7 +754,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-                android:text="操縦者ID情報" />
+                android:text="所有者情報" />
 
             <TextView
                 android:id="@+id/operatorIdLastUpdate"
@@ -778,7 +778,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="操縦者ID" />
+                        android:text="所有者ID" />
 
                     <TextView
                         android:id="@+id/operatorId"
@@ -788,7 +788,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="タイプ" />
+                        android:text="ID種別" />
 
                     <TextView
                         android:id="@+id/operatorIdType"
@@ -835,7 +835,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="タイプ" />
+                        android:text="認証種別" />
 
                     <TextView
                         android:id="@+id/authType"
