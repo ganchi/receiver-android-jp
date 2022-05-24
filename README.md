@@ -30,7 +30,8 @@ OpenDroneIDシグナル仕様に合致するものがあれば、そのリモー
 > **Note**
 > まっく氏は上記の説明ではうまくいかず、ビルド -> Build Bundle(s)/APK(s) -> Build APK(s)を実行、【...\Android\app\build\intermediates\apk\debug\app-debug.apk】を出力させ、これをスマートフォンに移動しインストールを実施しました。
 
-[**ビルド方法に関しWikiに記載しました。ご参考としてください**](https://github.com/ToshihiroMakuuchi/receiver-android-jp/wiki/4.-Android-Studio%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%83%93%E3%83%AB%E3%83%89)
+[**ビルドの方法に関しWikiに記載しました。ご参考としてください。(Wikiは随時更新中)**](https://github.com/ToshihiroMakuuchi/receiver-android-jp/wiki/4.-Android-Studio%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%83%93%E3%83%AB%E3%83%89)  
+
 ![](images/build01.jpg)
 
 完全な機能を実現するため、ソースコードをビルドする前に、Google Maps APIキーを取得する必要があります。
