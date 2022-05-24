@@ -10,7 +10,7 @@ OpenDroneIDに関するより詳細な情報は、opendroneid-core-cプロジェ
 https://github.com/opendroneid/opendroneid-core-c  
 
 このアプリケーションは、Bluetooth advertising / WiFi NANシグナルおよびBeaconを継続的にスキャンします。
-OpenDroneIDシグナル仕様に合致するものがあれば、その送信機をリストへ追加し、マップ上にドローンの位置を表示、OpenDroneIDデータの詳細内容を表示させることができます。
+OpenDroneIDシグナル仕様に合致するものがあれば、そのリモートID送信機を一覧へ追加し、マップ上にドローンの位置を表示、OpenDroneIDデータの詳細内容を表示させることができます。
 
 
 ![](Screenshot2.jpg)
