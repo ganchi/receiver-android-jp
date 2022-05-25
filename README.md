@@ -55,7 +55,7 @@ https://github.com/ToshihiroMakuuchi/receiver-android-jp/releases/
 
 ## 送信デバイス
 
-受信アプリケーションのテスト用として、リモートIDの送信デバイスの公開されている一覧は [こちら](transmitter-devices.md) を参照ください。
+受信アプリケーションのテスト実績として、リモートID送信デバイスの公開された動作確認済デバイス一覧は [こちら](transmitter-devices.md) をご参照ください。
 
 ## 異なるAndroidスマートフォンでの伝送方式のサポート
 
