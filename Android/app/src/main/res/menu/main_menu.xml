@@ -9,20 +9,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/clear"
+<<<<<<< HEAD
         android:title="クリア"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/help"
         android:title="ヘルプ"
+=======
+        android:title="@string/Clear"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/help"
+        android:title="@string/Help"
+>>>>>>> master
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/menu_log"
         android:checkable="true"
+<<<<<<< HEAD
         android:title="Log有効"
         app:showAsAction="never" />
     <item
         android:id="@+id/log_location"
         android:title="位置情報ログ閲覧"
+=======
+        android:title="@string/Log_enabled"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/log_location"
+        android:title="@string/Show_log_location"
+>>>>>>> master
         app:showAsAction="never" />
     <item
         android:id="@+id/coded_phy"
