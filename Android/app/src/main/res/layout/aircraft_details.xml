@@ -671,7 +671,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="エリア天井" />
+                        android:text="エリア上限" />
 
                     <TextView
                         android:id="@+id/systemAreaCeiling"
@@ -681,7 +681,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-                        android:text="エリア地上" />
+                        android:text="エリア下限" />
 
                     <TextView
                         android:id="@+id/systemAreaFloor"
