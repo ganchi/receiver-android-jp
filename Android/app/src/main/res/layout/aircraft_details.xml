@@ -27,11 +27,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text="接続情報" />
-=======
                 android:text="@string/Connection" />
->>>>>>> master
 
             <TextView
                 android:id="@+id/msgVersion"
@@ -86,11 +82,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="開始" />
-=======
                         android:text="@string/Started" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/conStarted"
@@ -100,11 +92,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="最終更新" />
-=======
                         android:text="@string/Last_seen" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/conLastUpdate"
@@ -129,11 +117,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="距離" />
-=======
                         android:text="@string/Distance" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/distance"
@@ -155,11 +139,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text="登録記号 1" />
-=======
                 android:text="@string/Basic_ID_1" />
->>>>>>> master
 
             <TextView
                 android:id="@+id/infoLastUpdate1"
@@ -183,11 +163,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="種類" />
-=======
                         android:text="@string/Type" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/infoType1"
@@ -197,11 +173,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="ID種別" />
-=======
                         android:text="@string/ID_Type" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/infoIdType1"
@@ -216,11 +188,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="無人機ID" />
-=======
                         android:text="@string/UAS_ID" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/infoUasId1"
@@ -244,11 +212,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text="登録記号 2" />
-=======
                 android:text="@string/Basic_ID_2" />
->>>>>>> master
 
             <TextView
                 android:id="@+id/infoLastUpdate2"
@@ -272,11 +236,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="種類" />
-=======
                         android:text="@string/Type" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/infoType2"
@@ -286,11 +246,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="ID種別" />
-=======
                         android:text="@string/ID_Type" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/infoIdType2"
@@ -305,11 +261,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="無人機ID" />
-=======
                         android:text="@string/UAS_ID" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/infoUasId2"
@@ -331,11 +283,7 @@
 
             <TextView
                 style="@style/Details.Heading"
-<<<<<<< HEAD
-                android:text="機体・フライト情報" />
-=======
                 android:text="@string/Location" />
->>>>>>> master
 
             <TextView
                 android:id="@+id/posLastUpdate"
@@ -359,11 +307,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="緯度" />
-=======
                         android:text="@string/Latitude" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/lat"
@@ -373,11 +317,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="経度" />
-=======
                         android:text="@string/Longitude" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/lon"
@@ -392,11 +332,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="気圧高度" />
-=======
                         android:text="@string/Altitude_Press" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/altitudePressure"
@@ -406,11 +342,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="対地高度" />
-=======
                         android:text="@string/Alt_Geod" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/altitudeGeodetic"
@@ -425,11 +357,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="軌道方向" />
-=======
                         android:text="@string/Direction" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/direction"
@@ -439,11 +367,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="ステータス" />
-=======
                         android:text="@string/Status" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/status"
@@ -458,11 +382,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="速度" />
-=======
                         android:text="@string/Hori_Speed" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/horiSpeed"
@@ -472,11 +392,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="垂直速度" />
-=======
                         android:text="@string/Vert_Speed" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/vertSpeed"
@@ -491,11 +407,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="高さ" />
-=======
                         android:text="@string/Height" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/height"
@@ -505,11 +417,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="対地高度種別" />
-=======
                         android:text="@string/Height_Over" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/heightType"
@@ -524,11 +432,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="水平精度" />
-=======
                         android:text="@string/Hori_Accuracy" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/horizontalAccuracy"
@@ -538,11 +442,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="垂直精度" />
-=======
                         android:text="@string/Vert_Acc" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/verticalAccuracy"
@@ -557,11 +457,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="気圧高度精度" />
-=======
                         android:text="@string/Baro_Acc" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/baroAccuracy"
@@ -571,11 +467,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="速度精度" />
-=======
                         android:text="@string/Speed_Acc" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/speedAccuracy"
@@ -590,11 +482,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="時刻精度" />
-=======
                         android:text="@string/Time_Acc" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/timeAccuracy"
@@ -604,11 +492,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="時刻" />
-=======
                         android:text="@string/Timestamp" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/timestamp"
@@ -631,11 +515,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text="セルフID情報" />
-=======
                 android:text="@string/Self_ID" />
->>>>>>> master
 
             <TextView
                 android:id="@+id/selfIdLastUpdate"
@@ -659,11 +539,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="セルフID情報" />
-=======
                         android:text="@string/Operation" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/selfIdDescription"
@@ -673,11 +549,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="情報種別" />
-=======
                         android:text="@string/Type" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/selfIdType"
@@ -700,11 +572,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text="システム情報" />
-=======
                 android:text="@string/System_Operator" />
->>>>>>> master
 
             <TextView
                 android:id="@+id/systemLastUpdate"
@@ -728,11 +596,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="操縦者位置種別" />
-=======
                         android:text="@string/Location_Type" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/operatorLocationType"
@@ -742,11 +606,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="操縦者高度" />
-=======
                         android:text="@string/Altitude" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/systemAltitudeGeo"
@@ -761,11 +621,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="操縦者緯度" />
-=======
                         android:text="@string/Latitude" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/systemLatitude"
@@ -775,11 +631,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="操縦者経度" />
-=======
                         android:text="@string/Longitude" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/systemLongitude"
@@ -794,11 +646,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="エリアカウント" />
-=======
                         android:text="@string/Area_Count" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/systemAreaCount"
@@ -808,11 +656,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="エリア半径" />
-=======
                         android:text="@string/Area_Radius" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/systemAreaRadius"
@@ -827,11 +671,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="エリア上限" />
-=======
                         android:text="@string/Area_Ceiling" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/systemAreaCeiling"
@@ -841,11 +681,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="エリア下限" />
-=======
                         android:text="@string/Area_Floor" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/systemAreaFloor"
@@ -860,11 +696,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="エリア分類" />
-=======
                         android:text="@string/Classification" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/classificationType"
@@ -874,11 +706,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="システム時刻" />
-=======
                         android:text="@string/Timestamp" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/systemTimestamp"
@@ -893,11 +721,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="カテゴリ" />
-=======
                         android:text="@string/Category" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/category"
@@ -907,11 +731,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="クラス" />
-=======
                         android:text="@string/Class" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/classValue"
@@ -934,11 +754,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text="操縦者情報" />
-=======
                 android:text="@string/Operator_ID" />
->>>>>>> master
 
             <TextView
                 android:id="@+id/operatorIdLastUpdate"
@@ -962,11 +778,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="操縦者ID" />
-=======
                         android:text="@string/Operator_ID" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/operatorId"
@@ -976,11 +788,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="ID種別" />
-=======
                         android:text="@string/Type" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/operatorIdType"
@@ -1003,11 +811,7 @@
                 style="@style/Details.Heading"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text="認証情報" />
-=======
                 android:text="@string/Authentication" />
->>>>>>> master
 
             <TextView
                 android:id="@+id/authLastUpdate"
@@ -1031,11 +835,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="認証種別" />
-=======
                         android:text="@string/Type" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/authType"
@@ -1045,11 +845,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="データ長" />
-=======
                         android:text="@string/Length" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/authLength"
@@ -1064,11 +860,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="認証時刻" />
-=======
                         android:text="@string/Timestamp" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/authTimestamp"
@@ -1084,11 +876,7 @@
 
                     <TextView
                         style="@style/Details.Label"
-<<<<<<< HEAD
-                        android:text="認証データ" />
-=======
                         android:text="@string/Authentication" />
->>>>>>> master
 
                     <TextView
                         android:id="@+id/authData"

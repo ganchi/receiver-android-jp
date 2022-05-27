@@ -11,14 +11,6 @@
     <string name="wifi_not_enabled_leaving">WiFiを有効にしないと、このアプリケーションは動作しません。</string>
     <string name="info">Info</string>
 
-<<<<<<< HEAD
-    <string name="coded_phy_not_supported">Coded Phy非対応</string>
-    <string name="coded_phy_supported">Coded Phy対応</string>
-    <string name="ea_not_supported">Extended Advertising非対応</string>
-    <string name="ea_supported">Extended Advertising対応</string>
-    <string name="nan_not_supported">WiFi NaN非対応</string>
-    <string name="nan_supported">WiFi NaN対応</string>
-=======
     <string name="Clear">Clear</string>
     <string name="Help">Help</string>
     <string name="Log_enabled">Log enabled</string>
@@ -30,7 +22,6 @@
     <string name="ea_supported">Extended Advertising supported</string>
     <string name="nan_not_supported">WiFi NaN not supported</string>
     <string name="nan_supported">WiFi NaN supported</string>
->>>>>>> master
 
     <string name="wifi_beacon_scan_not_supported">WiFi Beacon スキャン非対応</string>
     <string name="wifi_beacon_scan_supported">WiFi Beacon スキャン対応</string>
@@ -45,9 +36,6 @@
     <string name="beacon_help_heading">Wi-Fi Beacon</string>
     <string name="beacon_help_text">サンプル</string>
     <string name="nan_help_heading">Wi-Fi NaN</string>
-<<<<<<< HEAD
-    <string name="nan_help_text">サンプル</string>
-=======
     <string name="nan_help_text">Sample</string>
 
     <string name="Connection">Connection</string>
@@ -95,5 +83,4 @@
     <string name="Operator_ID">Operator ID</string>
     <string name="Authentication">Authentication</string>
     <string name="Length">Length</string>
->>>>>>> master
 </resources>
