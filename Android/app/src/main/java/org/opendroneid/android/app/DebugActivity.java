@@ -293,10 +293,17 @@ public class DebugActivity extends AppCompatActivity {
 
         addDeviceList();
 
+/*
         AircraftMapView mMapView = (AircraftMapView) getSupportFragmentManager().findFragmentById(R.id.mapView);
         if (mMapView != null)
             mMapView.setMapSettings();
-    }
+*/
+		AircraftOsMapView mOsMapView = (AircraftOsMapView) getSupportFragmentManager().findFragmentById(R.id.mapOsView);
+		if (mOsMapView != null) {
+			mOsMapView.setMapSettings();
+		}
+
+	}
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
