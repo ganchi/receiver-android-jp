@@ -1,6 +1,6 @@
 # リモートID (OpenDroneID) Android受信アプリ
 
-2022/06/04 GANCHI追記：
+2022/06/04 GANCHI追記：  
 本家の Google Map から Open Street Map (https://www.openstreetmap.org) へと変更したバージョンとなります。
 動作させる事を念頭に置いたコードになっているので、使い勝手などの細かい部分などは対応していません。
 あくまでもコード変更時の参考としてご覧下さい。
